@@ -1,6 +1,11 @@
 function addTodo(){
     let inputText = document.getElementById("inputText");
     let inputValue = inputText.value.trim()
+
+
+    if(inputText.value===""){
+        return alert("please add your task")
+    }
  
     let li = document.createElement("li");
 
